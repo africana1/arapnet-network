@@ -1,0 +1,289 @@
+body {
+  font-family: 'Vidaloka';
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+  background: #e0e0e0;
+}
+
+.container {
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
+
+/* common classes */
+
+.primary-text {
+  color: #56a79a;
+}
+
+.primary-background {
+  background: #56a79a;
+}
+
+#main-header {
+  border-bottom: 1px solid #56a79a;
+}
+
+/* Navbar */
+#navbar {
+  text-transform: uppercase;
+}
+
+#navbar li {
+  display: inline;
+  padding-right: 20px;
+  list-style: none;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: rgb(36, 34, 34);
+  font-size: 18px;
+}
+
+#navbar li.current a,
+#navbar a:hover {
+  color: #56a79a;
+  border-bottom: 3px solid #56a79a;
+  padding-bottom: 1px;
+}
+
+h1 {
+  font-family: 'Yatra One';
+}
+
+#mainH1 {
+  font-size: 2.5rem;
+}
+
+#lens {
+  font-family: 'Crimson Text';
+}
+
+/* show case */
+#showcase {
+  background: url('/img/datacenter2.jpg') no-repeat center center;
+  border-bottom: 1px solid #56a79a;
+  margin-bottom: 30px;
+}
+
+#showcase .row {
+  height: 600px;
+}
+
+#showcase h1 {
+  font-size: 50px;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+#showcase p {
+  color: #eee;
+  margin: 0;
+}
+
+#showcase .showcase-content {
+  background: #333;
+  color: #fff;
+  border-radius: 90px;
+  padding: 40px;
+  opacity: 0.9;
+}
+
+/* features */
+#features h4 {
+  font-size: 24px;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+#features p {
+  color: #000;
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+#features .fa {
+  color: teal;
+}
+
+#features img {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+}
+
+#features h5 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+/* Info  */
+#info {
+  background: #2f496e;
+  /* background: #152031; */
+  color: #fff;
+  margin-top: 10px;
+}
+
+#info h2 {
+  font-size: 35px;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+#info ul {
+  list-style: none;
+  padding: 0;
+}
+
+#info ul li {
+  line-height: 1.5em;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-left: 10px;
+  font-family: 'Prata';
+}
+
+#imgInfo {
+  padding-top: 10px;
+}
+
+/* Company section */
+#company {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+#company h4 {
+  text-transform: uppercase;
+  padding-bottom: 0;
+}
+
+#company ul {
+  padding: 0;
+  list-style: none;
+  line-height: 2em;
+}
+
+#company input[type='text'] {
+  padding: 7px;
+}
+
+#company button {
+  background: #222;
+  color: #fff;
+  padding: 10px;
+  border: 0;
+}
+
+#company button:hover {
+  background: teal;
+  color: #eee;
+}
+
+/* footer */
+
+#main-footer {
+  background: #036958;
+  color: #fff;
+}
+
+#main-footer a {
+  color: yellow;
+  text-decoration: none;
+}
+
+#page {
+  margin-bottom: 9px;
+}
+
+/* Services */
+.services ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+.services ul li:nth-child(odd) {
+  background: #333;
+  color: #fff;
+}
+
+.services ul li:nth-child(even) {
+  background: #3b8d7f;
+  color: #fff;
+}
+
+/* Contact */
+
+.contact form {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.contact form input[type='text'] {
+  width: 50%;
+  height: 30px;
+  margin-bottom: 10px;
+  font-family: 'Prata';
+  font-size: 1.1rem;
+}
+
+.contact form textarea {
+  width: 50%;
+  height: 100px;
+  font-family: 'Prata';
+  font-size: 1.1rem;
+}
+
+.contact form button {
+  width: 50%;
+  padding: 10px 0;
+  border: 0;
+  background: #222;
+  color: #fff;
+  font-family: 'Prata';
+  font-size: 1.2rem;
+}
+
+.contact form button:hover {
+  width: 50%;
+  background: teal;
+  color: #eee;
+}
+
+.contact form label {
+  text-transform: uppercase;
+}
+
+/* media queries */
+@media (max-width: 1200px) {
+  #showcase h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  #showcase h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  #showcase .showcase-content {
+    padding: 40px 10px;
+  }
+}

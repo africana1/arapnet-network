@@ -1,0 +1,328 @@
+@font-face {
+  font-family: 'Genericons';
+  src: url('fonts/genericons-regular-webfont.woff') format('woff'),
+    url('fonts/genericons-regular-webfont.eot') format('truetype');
+}
+
+/* vidaloka-regular - latin */
+@font-face {
+  font-family: 'Vidaloka';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/vidaloka-v11-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Vidaloka '), local('Vidaloka-Regular'),
+    url('fonts/vidaloka-v11-latin-regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/vidaloka-v11-latin-regular.woff2') format('woff2'),
+    url('fonts/vidaloka-v11-latin-regular.woff') format('woff'),
+    url('fonts/vidaloka-v11-latin-regular.ttf') format('truetype'),
+    url('fonts/vidaloka-v11-latin-regular.svg#Vidaloka') format('svg'); /* Legacy iOS */
+}
+
+/* crimson-text-regular - latin */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/crimson-text-v9-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Crimson Text Regular'), local('CrimsonText-Regular'),
+    url('fonts/crimson-text-v9-latin-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('fonts/crimson-text-v9-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('fonts/crimson-text-v9-latin-regular.woff') format('woff'),
+    /* Modern Browsers */ url('fonts/crimson-text-v9-latin-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('fonts/crimson-text-v9-latin-regular.svg#CrimsonText') format('svg'); /* Legacy iOS */
+}
+
+/* yatra-one-regular - latin */
+@font-face {
+  font-family: 'Yatra One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/yatra-one-v5-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Yatra One Regular'), local('YatraOne-Regular'),
+    url('fonts/yatra-one-v5-latin-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('fonts/yatra-one-v5-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('fonts/yatra-one-v5-latin-regular.woff') format('woff'),
+    /* Modern Browsers */ url('fonts/yatra-one-v5-latin-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('fonts/yatra-one-v5-latin-regular.svg#YatraOne') format('svg'); /* Legacy iOS */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: #e0e0e0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+#navbar {
+  text-transform: uppercase;
+  font-family: 'Vidaloka';
+  font-style: normal;
+  text-align: right;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: -40px;
+}
+
+#navbar li {
+  display: inline;
+  padding-right: 20px;
+  list-style: none;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: rgb(36, 34, 34);
+  font-size: 18px;
+}
+
+#navbar li.current a,
+#navbar a:hover {
+  color: #56a79a;
+  border-bottom: 3px solid #56a79a;
+  padding-bottom: 1px;
+}
+
+h1 {
+  font-family: 'Yatra One';
+}
+
+#mainH1 {
+  font-size: 2.5rem;
+  margin-top: -40px;
+}
+
+#lens {
+  font-family: 'Crimson Text';
+}
+
+#main-header {
+  border-bottom: 1px solid #56a79a;
+}
+
+/* Company section */
+#company {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+#company h4 {
+  text-transform: uppercase;
+}
+
+#company ul {
+  padding: 0;
+  list-style: none;
+  line-height: 2em;
+}
+
+#company input[type='text'] {
+  padding: 7px;
+}
+
+#company button {
+  background: #222;
+  color: #fff;
+  padding: 10px;
+  border: 0;
+}
+
+#company button:hover {
+  background: teal;
+  color: #eee;
+}
+
+/* footer */
+
+#main-footer {
+  background: #036958;
+  color: #fff;
+}
+
+#page {
+  margin-bottom: 9px;
+}
+
+.primary-text {
+  color: #56a79a;
+}
+
+.primary-background {
+  background: #56a79a;
+}
+
+.container {
+  margin: 50px auto;
+  width: 70%;
+}
+
+header h1 {
+  color: #000;
+  text-align: center;
+}
+
+.accordion {
+  background: #333;
+  width: 100%;
+  min-width: 800px;
+  display: block;
+  list-style-type: none;
+  overflow: hidden;
+  height: 200px;
+  font-size: 0;
+}
+
+.tab {
+  display: inline-block;
+  background-color: #444;
+  border-right: #333 1px solid;
+  width: 80px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  transition: all 0.5s ease-in-out 0.1s;
+}
+
+.tab:hover {
+  width: 450px;
+}
+
+.tab:hover .social a:before {
+  margin-left: -100px;
+}
+
+.tab:hover .social a:after {
+  margin-left: -5px;
+}
+
+.tab .content {
+  background: #fff;
+  width: 360px;
+  height: 200px;
+  margin-left: 80px;
+  padding: 50px 0 0 15px;
+  position: relative;
+}
+
+.tab .content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.tab .content p {
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  padding-right: 30px;
+}
+
+.social a:after,
+.social a:before {
+  transition: all 0.4s ease-in-out 0.1s;
+  width: 80px;
+  height: 200px;
+  position: absolute;
+  text-indent: 0;
+  padding-top: 90px;
+  padding-left: 25px;
+  display: block;
+  font: normal 30px Genericons;
+  color: #fff;
+}
+
+.social a:after {
+  font-size: 48px;
+  padding-left: 20px;
+  padding-top: 80px;
+  margin-left: 85px;
+}
+
+.youtube a:before,
+.youtube a:after {
+  content: '\f213';
+}
+.youtube a:after {
+  background-color: #ff0000;
+}
+
+.twitter a:before,
+.twitter a:after {
+  content: '\f202';
+}
+.twitter a:after {
+  background-color: #6dc5dd;
+}
+
+.facebook a:before,
+.facebook a:after {
+  content: '\f204';
+}
+.facebook a:after {
+  background-color: #3b5998;
+}
+
+.linkedin a:before,
+.linkedin a:after {
+  content: '\f208';
+}
+.linkedin a:after {
+  background-color: #00a9cd;
+}
+
+.instagram a:before,
+.instagram a:after {
+  content: '\f215';
+}
+.instagram a:after {
+  background-color: #6dc993;
+}
+
+.github a:before,
+.github a:after {
+  content: '\f200';
+}
+.github a:after {
+  background-color: #6e5494;
+}
+
+@media (max-width: 950px) {
+  .container {
+    width: 70%;
+  }
+
+  .tab {
+    display: block;
+    width: 100%;
+    border-bottom: 3px #333 solid;
+  }
+
+  .accordion {
+    display: block;
+    min-width: 450px;
+    height: auto;
+  }
+
+  .tab .content {
+    width: 85%;
+  }
+
+  .tab:hover {
+    width: 100%;
+  }
+}
+
+@media (max-width: 680px) {
+  .container {
+    width: 95%;
+  }
+
+  .accordion {
+    width: 100%;
+    min-width: 350px;
+  }
+}
